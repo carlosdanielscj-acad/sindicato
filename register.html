@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Nome</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Página Inicial</a>
+        <a href="/login">Entrar como Administrador</a>
+    </div>
+
+    <div class="container">
+        <h1>Registrar Nome</h1>
+        <form action="/register" method="POST">
+            <input type="text" name="name" placeholder="Digite seu nome" required>
+            <button type="submit">Registrar</button>
+        </form>
+        <p><a href="/">Voltar para a página inicial</a></p>
+    </div>
+</body>
+</html>
